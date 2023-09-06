@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+
+*{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+nav{
+   /* border: 2px solid red;*/
+   height: 100vh;   /* altura*/
+   width: 260px;    /*quando coloca duas propriedades iguais, a segunda vai prevalecer*/
+   width: 50vw;   /* largura*/
+   background: #e9e9e9;     /* fundo  ex: backgroud color - cor de fundo*/
+   position: fixed;       /* posição*/
+   top: 0;               /*  cima ou principal*/
+   left: 0;              /* esquerda*/
+
+   
+}
+.expandir{
+    /*border: 2px solid red;*/
+    height: 60px;  /* altura*/
+    width: 100%;    /* largura*/
+    display: flex;    
+    align-items: center;      /* itens de alinhamento*/   
+
+
+}
+.expandir i{
+    /*border: 2px solid red;*/
+    font-size: 30px;       /* tamanho da fonte*/ 
+    color: #808080;        /* cor da fonte*/
+    height:50px ;           /* altura da fonte*/
+    min-width: 78px;       /* largura minima*/
+    text-align: center;   /* alinhamento de texto*/
+    line-height: 50px;   /* Altura da linha*/
+    cursor: pointer;  /* quando colocar o mouse no icone o cursor muda*/
+
+}
+
+.expandir .text-list{
+   /* border: 2px solid red;*/
+    font-size: 22px;    /* tamanho da fonte*/
+    color: #808080;     /* cor da letra*/
+    font-weight: 400;      /* espessura da fonte*/
+
+
+}
+.nav-links{
+   /* border: 2px solid red;*/
+    height: 100%;               /* altura*/
+    padding: 30px 0 150px ;     /* preenchimento*/
+    overflow: auto;             /*  para fazer a barra de rolagem*/
+    
+}
+
+.nav-links::-webkit-scrollbar{ /* scrollbar para fazer a barra de rolagem na web*/
+
+  display: none;
+}
+li{     /* li é  lista*/
+    /*border: 2px solid red;*/
+    list-style: none;        /* estilo da lista*/
+    position: relative;
+}
+li:hover{ /* hover serve para fazer efeito ao passar o cursor*/
+    background: #bfbfbf;
+    transition: 2s;
+
+
+}
+.icon-li{
+    display: flex;         /* mostrar*/
+    align-items: center;
+    justify-content: space-between;  /* justificar conteudo / espaço entre*/
+}
+li i{
+    height: 50px;           /* altura da fonte*/
+    color: #808080;       /* cor da fonte*/
+    min-width: 78px;      /* largura minima*/
+    text-align: center;   /* alinhamento de texto*/
+    line-height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;   /* decoração de texto / tirou o sublinhado*/
+    color:  #666666;
+}
+li .text-list{
+    /*border: 2px solid red;*/
+    font-size: 18px;
+    color:  #666666;
+    font-weight: 400;
+}
+li .sub-menu{
+    /*border: 2px solid red;*/
+    padding: 6px 14px 80px;
+    margin-top:-18px;
+    background: #006464;
+    /*display: none;*/    /*mostrar / nenhum*/
+}
+li .sub-menu a{
+    /*border: 2px solid red;*/
+    color: white;
+    font-size: 15px;
+    padding: 5px 0;
+    white-space: nowrap;   /*remover quebra de linha de texto*/
+    opacity: 0.6;   /*opacidade*/
+
+}
+li .sub-menu a:hover{
+    opacity: 1;   /*opacidade*/
+} 
+#conteudo{
+    background: #f3f3f3;
+    height: 100vh;
+    position: relative;
+    left: 200px;
+    width: calc(100%-200px);
+}
+
+.btn {
+    border: 0 none;
+    font-weight: 400;
+    border-radius: 0px;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+
+.btn-primary {
+    background: #000000;
+    color: #ffffff;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #333333;
+}
+
+.btn-primary:active, .btn-primary.active {
+    background: #007299;
+    box-shadow: none;
+}
