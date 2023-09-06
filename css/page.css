@@ -126,6 +126,11 @@ li .sub-menu a:hover{
     width: calc(100%-200px);
 }
 
+.form-floating label{
+    left: 9px;
+
+}
+
 .btn {
     border: 0 none;
     font-weight: 400;
@@ -149,3 +154,4 @@ li .sub-menu a:hover{
     background: #007299;
     box-shadow: none;
 }
+
