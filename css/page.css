@@ -18,6 +18,7 @@ nav{
    top: 0;               /*  cima ou principal*/
    left: 0;              /* esquerda*/
 
+
    
 }
 .expandir{
@@ -30,7 +31,6 @@ nav{
 
 }
 .expandir i{
-    /*border: 2px solid red;*/
     font-size: 30px;       /* tamanho da fonte*/ 
     color: #808080;        /* cor da fonte*/
     height:50px ;           /* altura da fonte*/
@@ -42,7 +42,6 @@ nav{
 }
 
 .expandir .text-list{
-   /* border: 2px solid red;*/
     font-size: 22px;    /* tamanho da fonte*/
     color: #808080;     /* cor da letra*/
     font-weight: 400;      /* espessura da fonte*/
@@ -50,32 +49,30 @@ nav{
 
 }
 .nav-links{
-   /* border: 2px solid red;*/
     height: 100%;               /* altura*/
-    padding: 30px 0 150px ;     /* preenchimento*/
+    padding: 30px 0 150px 0;     /* preenchimento*/
     overflow: auto;             /*  para fazer a barra de rolagem*/
     
 }
 
-.nav-links::-webkit-scrollbar{ /* scrollbar para fazer a barra de rolagem na web*/
-
+.nav-links::-webkit-scrollbar{ 
   display: none;
 }
-li{     /* li é  lista*/
-    /*border: 2px solid red;*/
-    list-style: none;        /* estilo da lista*/
+
+li{    
+    list-style: none;       
     position: relative;
 }
-li:hover{ /* hover serve para fazer efeito ao passar o cursor*/
+li:hover{ 
     background: #bfbfbf;
     transition: 2s;
 
 
 }
 .icon-li{
-    display: flex;         /* mostrar*/
+    display: flex;        
     align-items: center;
-    justify-content: space-between;  /* justificar conteudo / espaço entre*/
+    justify-content: space-between;  
 }
 li i{
     height: 50px;           /* altura da fonte*/
@@ -94,14 +91,13 @@ li a{
     color:  #666666;
 }
 li .text-list{
-    /*border: 2px solid red;*/
     font-size: 18px;
     color:  #666666;
     font-weight: 400;
 }
 li .sub-menu{
     /*border: 2px solid red;*/
-    padding: 6px 14px 80px;
+    padding: 6px 6px 14px 80px;
     margin-top:-18px;
     background: #006464;
     /*display: none;*/    /*mostrar / nenhum*/
@@ -126,8 +122,17 @@ li .sub-menu a:hover{
     width: calc(100%-200px);
 }
 
+.form-header >h2{
+    font-weight: 400px;
+    font-size: 30px;
+}
+
+.form-header{
+    font-weight: 300px;
+}
+
 .form-floating label{
-    left: 9px;
+    left: 7px;
 
 }
 
